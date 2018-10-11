@@ -8,9 +8,10 @@ pipeline {
             fileExists 'Casting.py'
           }
         }
-        stage('Run the python script') {
+        stage('Run') {
           steps {
-            powershell(script: 'python Casting.py', returnStatus: true)
+            sh '''#!/bin/bash
+python Casting.py'''
           }
         }
       }
