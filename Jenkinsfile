@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Find File') {
       steps {
         fileExists 'Casting.py'
       }
