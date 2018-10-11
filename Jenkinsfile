@@ -14,6 +14,11 @@ pipeline {
 python Casting.py'''
           }
         }
+        stage('') {
+          steps {
+            echo 'Processing pipeline'
+          }
+        }
       }
     }
   }
