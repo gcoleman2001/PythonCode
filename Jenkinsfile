@@ -14,16 +14,6 @@ pipeline {
 python Casting.py'''
           }
         }
-        stage('error') {
-          steps {
-            echo 'Processing pipeline'
-          }
-        }
-        stage('') {
-          steps {
-            git(url: 'https://github.com/gcoleman2001/PythonCode', branch: 'master', poll: true)
-          }
-        }
       }
     }
   }
